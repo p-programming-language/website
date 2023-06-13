@@ -10,7 +10,8 @@ function selectPage(page: string) {
 
 function getPageURL(page: string) {
   if (page === "Home")
-    page = "index";
+    return "/";
+
   return `/${page.toLowerCase()}.html`
 }
 
@@ -44,7 +45,7 @@ window.addEventListener("hashchange", () => {
       <nav id="navigation">
         <ul>
           <li class="nav-item" v-for="(page, i) in pages" :key="i" :class="{ active: selectedPage === page }">
-            <a :href="getPageURL(page)" @click="selectPage(page)">{{ page }}</a>
+            <router-link :to="getPageURL(page)" @click="selectPage(page)">{{ page }}</router-link>
           </li>
         </ul>
       </nav>
