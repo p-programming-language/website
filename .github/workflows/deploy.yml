@@ -26,12 +26,12 @@ jobs:
       run: |
         npm i
         npm run build
-        
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
+
     runs-on: ubuntu-latest
     steps:
       - name: Setup Pages
@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload the distribution folder
-          path: 'dist/'
+          path: "./dist/"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
