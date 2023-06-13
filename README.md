@@ -1,2 +1,2 @@
-# website
-Website for cosmo-lang.dev
+# Cosmo Website
+Source for website @ http://cosmo-lang.dev
