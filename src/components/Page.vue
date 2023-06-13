@@ -12,7 +12,7 @@ function getPageURL(page: string) {
   if (page === "Home")
     return "/";
 
-  return `/${page.toLowerCase()}.html`
+  return `/${page.toLowerCase()}`
 }
 
 function includes<T>(arr: T[], value: T): boolean {
