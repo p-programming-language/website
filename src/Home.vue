@@ -3,7 +3,7 @@
 	<br/>
 	<h1 id="title">Cosmo</h1>
 	<br/>
-	<p>Cosmo is a statically-typed interpreted programming language written in pure Crystal.</p>
+	<h3>A statically-typed interpreted programming language written in pure Crystal.</h3>
 	<br/>
-	<p>It aims to be readable and easy to use.</p>
+	<h3>It aims to be extensible, readable, and easy to use.</h3>
 </template>

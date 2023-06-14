@@ -3,5 +3,5 @@
   <br/>
   <h1 id="title">Community</h1>
   <br/>
-  <p>Hello, world!</p>
+  <h2>Welcome!</h2>
 </template>
