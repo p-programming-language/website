@@ -3,8 +3,8 @@ import "./assets/main.css";
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
-import Home from "./views/Home.vue";
 import Community from "./views/Community.vue";
+import Home from "./views/Home.vue";
 
 const router = createRouter({
   history: createWebHistory(),

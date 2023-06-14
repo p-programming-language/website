@@ -1,8 +1,4 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script lang="ts">
-
-</script>
-
 <template>
 	<h1 id="title">Cosmo</h1>
 	<br/>
