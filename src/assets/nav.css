@@ -30,7 +30,7 @@
 
 @media (hover: hover) {
   #navigation a:hover {
-    color: #dbd687;
+    color: #fffce0;
   }
 }
 
@@ -45,7 +45,7 @@
   bottom: -2px;
   width: var(--nb-width);
   height: 2px;
-  background-color: #ffffff;
+  background-color: #dbd687;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.2s ease;
@@ -62,5 +62,5 @@
   bottom: -2px;
   width: var(--nb-width);
   height: 2px;
-  background-color: #ffffff;
+  background-color: #dbd687;
 }

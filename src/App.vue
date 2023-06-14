@@ -5,7 +5,11 @@ import NavBar from './components/NavBar.vue';
 
 <template>
   <NavBar/>
-  <router-view/>
+  <main>
+    <div class="wrapper">
+      <router-view/>
+    </div>
+  </main>
 </template>
 
 <style scoped>
