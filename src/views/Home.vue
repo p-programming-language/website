@@ -21,4 +21,16 @@
 			</a>
 		</ul>
 	</div>
+
+	<div id="http-example">
+		<code class="cosmo-codeblock">
+## A very basic HTTP server<br/>
+use Server from "http"<br/>
+<br/>
+puts("Listening @ http://localhost:8080")<br/>
+Server.listen(8080, &void (string->any res, string->any req): {<br/>
+	res->send("Hello world, got %{req::path}!")<br/>
+})<br/>
+		</code>
+	</div>
 </template>

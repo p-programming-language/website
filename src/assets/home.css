@@ -1,3 +1,12 @@
+.cosmo-codeblock {
+  padding: 15px 15px;
+  border-radius: 6px;
+  border: 2px solid var(--color-background-light);
+  background-color: var(--color-background-soft);
+  display: inline-block;
+  text-align: left;
+}
+
 #main-button-list {
   display: flex;
   justify-content: center;
