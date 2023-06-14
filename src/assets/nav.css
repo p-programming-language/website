@@ -10,7 +10,7 @@
 }
 
 #navigation li.nav-item {
-  margin: 0 20px 30px;
+  margin: 0 20px 70px;
   position: relative;
   font-size: larger;
 }
@@ -35,7 +35,7 @@
   --nb-width: 70%;
 }
 
-#navigation .nav-item:not(.active) a::after {
+#navigation .nav-item a::after {
   content: "";
   position: absolute;
   left: calc((100% - var(--nb-width)) / 2);
@@ -48,7 +48,7 @@
   transition: transform 0.2s ease;
 }
 
-#navigation .nav-item:not(.active) a:hover::after {
+#navigation .nav-item a:hover::after {
   transform: scaleX(1);
 }
 
