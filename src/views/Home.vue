@@ -15,6 +15,9 @@
 			<a href="https://discord.gg/WHyHh39dwh" target="_blank">
 				<button class="main-button">Try It</button>
 			</a>
+			<a href="https://github.com/cosmo-lang" target="_blank">
+				<button class="main-button">GitHub</button>
+			</a>
 		</ul>
 	</div>
 

@@ -18,7 +18,7 @@ const router = createRouter({
       path: "/community",
       name: "Community",
       component: Community
-    }
+    },
   ]
 });
 
