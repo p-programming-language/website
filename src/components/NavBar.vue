@@ -40,37 +40,12 @@ window.addEventListener("hashchange", () => {
 
 <template>
   <header>
-    <div class="wrapper">
-      <nav id="navigation">
-        <ul>
-          <li class="nav-item" v-for="(page, i) in pages" :key="i" :class="{ active: selectedPage === page }">
-            <router-link :to="getPageURL(page)" @click="selectPage(page)">{{ page }}</router-link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav id="navigation">
+      <ul>
+        <li class="nav-item" v-for="(page, i) in pages" :key="i" :class="{ active: selectedPage === page }">
+          <router-link :to="getPageURL(page)" @click="selectPage(page)">{{ page }}</router-link>
+        </li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <div class="wrapper">
-      <slot></slot>
-    </div>
-  </main>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-}
-</style>
