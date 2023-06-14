@@ -2,6 +2,7 @@ import "./assets/main.css";
 
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
+import App from "./App.vue";
 import Home from "./Home.vue";
 import Community from "./Community.vue";
 
@@ -21,6 +22,6 @@ const router = createRouter({
   ]
 });
 
-createApp(Home)
+createApp(App)
   .use(router)
   .mount("#app");

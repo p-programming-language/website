@@ -1,7 +1,11 @@
 <!-- TODO: add epic http server example in a code block -->
+<script setup lang="ts">
+import NavBar from './components/NavBar.vue';
+</script>
 
 <template>
-  <router-view></router-view>
+  <NavBar/>
+  <router-view/>
 </template>
 
 <style scoped>

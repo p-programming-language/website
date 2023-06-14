@@ -1,3 +1,13 @@
+<template>
+  <nav id="navigation">
+    <ul>
+      <li class="nav-item" v-for="(page, i) in pages" :key="i" :class="{ active: selectedPage === page }">
+        <router-link :to="getPageURL(page)" @click="selectPage(page)">{{ page }}</router-link>
+      </li>
+    </ul>
+  </nav>
+</template>
+
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
@@ -37,15 +47,3 @@ window.addEventListener("hashchange", () => {
     selectedPage.value = currentPage;
 });
 </script>
-
-<template>
-  <header>
-    <nav id="navigation">
-      <ul>
-        <li class="nav-item" v-for="(page, i) in pages" :key="i" :class="{ active: selectedPage === page }">
-          <router-link :to="getPageURL(page)" @click="selectPage(page)">{{ page }}</router-link>
-        </li>
-      </ul>
-    </nav>
-  </header>
-</template>
