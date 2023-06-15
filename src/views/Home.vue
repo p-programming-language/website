@@ -8,7 +8,7 @@ import HTTPRequestExample from "@/components/code-examples/HTTPRequestExample.vu
 export default {
   data() {
     return {
-      latestRelease: ""
+      latestRelease: "..."
     };
   },
   created() {
@@ -43,7 +43,7 @@ export default {
 		</ul>
 	</div>
 
-	<h1 class="bright push-down-much">Latest release: {{ latestRelease }}</h1>
+	<h1 class="bright push-down-much">Latest release: <p style="font-weight: 700; display: inline;">{{ latestRelease }}</p></h1>
 
 	<HTTPServerExample class="push-down"/>
 	<HTTPRequestExample class="push-down"/>
