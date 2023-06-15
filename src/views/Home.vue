@@ -5,6 +5,26 @@
 import HTTPServerExample from "@/components/HTTPServerExample.vue"
 </script>
 
+<script lang="ts">
+export default {
+  data() {
+    return {
+      latestRelease: ""
+    };
+  },
+  created() {
+    this.fetchLatestRelease();
+  },
+  methods: {
+    async fetchLatestRelease(): Promise<void> {
+      fetch("https://api.github.com/repos/cosmo-lang/cosmo/releases/latest")
+        .then(response => response.json())
+        .then(data => this.latestRelease = data.tag_name);
+    }
+  }
+};
+</script>
+
 <template>
 	<h1 class="bright title">Cosmo</h1>
 	<h3>A statically-typed interpreted programming language written in pure Crystal.</h3>
@@ -23,6 +43,8 @@ import HTTPServerExample from "@/components/HTTPServerExample.vue"
 			</a>
 		</ul>
 	</div>
+
+	<h1 class="bright push-down-much">Latest release: {{ latestRelease }}</h1>
 
 	<HTTPServerExample/>
 </template>
