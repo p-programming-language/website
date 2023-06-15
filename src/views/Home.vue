@@ -1,8 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<!-- TODO: latest release header -->
-
 <script setup lang="ts">
-import HTTPServerExample from "@/components/HTTPServerExample.vue"
+import HTTPServerExample from "@/components/code-examples/HTTPServerExample.vue"
+import HTTPRequestExample from "@/components/code-examples/HTTPRequestExample.vue"
 </script>
 
 <script lang="ts">
@@ -46,5 +45,6 @@ export default {
 
 	<h1 class="bright push-down-much">Latest release: {{ latestRelease }}</h1>
 
-	<HTTPServerExample/>
+	<HTTPServerExample class="push-down"/>
+	<HTTPRequestExample class="push-down"/>
 </template>
