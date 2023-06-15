@@ -5,6 +5,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
 import Community from "./views/Community.vue";
 import Home from "./views/Home.vue";
+import Docs from "./views/Docs.vue";
+import Install from "./views/Install.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -19,6 +21,16 @@ const router = createRouter({
       name: "Community",
       component: Community
     },
+    {
+      path: "/docs",
+      name: "Docs",
+      component: Docs
+    },
+    {
+      path: "/install",
+      name: "Install",
+      component: Install
+    }
   ]
 });
 

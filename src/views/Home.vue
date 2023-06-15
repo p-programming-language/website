@@ -1,4 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
+<script setup lang="ts">
+import HTTPServerExample from "../components/HTTPServerExample.vue"
+</script>
+
 <template>
 	<h1 id="title">Cosmo</h1>
 	<br/>
@@ -21,11 +25,5 @@
 		</ul>
 	</div>
 
-	<pre id="http-example"><code class="cosmo-codeblock"><span class="cch-com">## A very basic HTTP server</span>
-<span class="cch-kw">use</span> <span class="cch-class">Server</span> <span class="cch-kw">from</span> <span class="cch-str"><span class="cch-op">"</span>http<span class="cch-op">"</span></span>
-
-<span class="cch-fn">puts</span><span class="cch-b1">(</span><span class="cch-str"><span class="cch-op">"</span>Listening @ <u>http://localhost:8080</u><span class="cch-op">"</span></span><span class="cch-b1">)</span>
-<span class="cch-class">Server</span><span class="cch-op">.</span><span class="cch-fn">listen</span><span class="cch-b1">(</span><span class="cch-num">8080</span>, <span class="cch-op">&</span><span class="cch-kw">void</span> <span class="cch-b2">(</span><span class="cch-kw">string</span><span class="cch-op">-></span><span class="cch-kw">any</span> <span class="cch-id">res</span>, <span class="cch-kw">string</span><span class="cch-op">-></span><span class="cch-kw">any</span> <span class="cch-id">req</span><span class="cch-b2">)</span><span class="cch-op">:</span> <span class="cch-b3">{</span>
-&ThickSpace;<span class="cch-id">res</span><span class="cch-op">-></span><span class="cch-fn">send</span><span class="cch-b1">(</span><span class="cch-str"><span class="cch-op">"</span>Hello world, got <span class="cch-op">%</span><span class="cch-op">{</span></span><span class="cch-id">req</span><span class="cch-op">::</span><span class="cch-id">path</span><span class="cch-str"><span class="cch-op">}</span>!<span class="cch-op">"</span></span><span class="cch-b1">)</span>
-<span class="cch-b3">}</span><span class="cch-b1">)</span></code></pre>
+	<HTTPServerExample/>
 </template>
