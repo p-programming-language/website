@@ -12,7 +12,7 @@ export default {
 <template>
   <h2 class="title list-header">{{ title }}</h2>
   <hr class="separator">
-  <div class="description-body">
+  <div class="description-body push-down">
     <p><slot></slot></p>
   </div>
 </template>
