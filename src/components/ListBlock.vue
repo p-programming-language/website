@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <h2 class="title list-header">{{ title }}</h2>
+  <h2 class="bright list-header">{{ title }}</h2>
   <hr class="separator">
   <div class="description-body push-down">
     <p><slot></slot></p>

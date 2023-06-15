@@ -6,7 +6,7 @@ import HTTPServerExample from "@/components/HTTPServerExample.vue"
 </script>
 
 <template>
-	<h1 class="title">Cosmo</h1>
+	<h1 class="bright title">Cosmo</h1>
 	<h3>A statically-typed interpreted programming language written in pure Crystal.</h3>
 	<h3>It aims to be extensible, readable, and easy to use.</h3>
 
