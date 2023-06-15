@@ -5,8 +5,7 @@ export default {
     return {
       windowsInstallerURL: "",
       osxInstallerURL: "",
-      linuxInstallerURL: "",
-      sourceInstallerURL: ""
+      linuxInstallerURL: ""
     };
   },
   created() {
@@ -21,7 +20,6 @@ export default {
           this.windowsInstallerURL = baseURL + "Windows.zip";
           this.osxInstallerURL = baseURL + "OSX.zip";
           this.linuxInstallerURL = baseURL + "Linux.zip";
-          this.sourceInstallerURL = "https://codeload.github.com/cosmo-lang/cosmo/zip/refs/tags/" + data.tag_name;
         });
     }
   }
@@ -37,17 +35,17 @@ export default {
 		<ul>
       <a :href="windowsInstallerURL">
 				<button style="border-radius: 25%;" class="main-button no-border">
-          <img width="36" height="36" src="https://img.icons8.com/color/48/windows-10.png" alt="windows-10"/>
+          <img width="48" height="48" src="https://img.icons8.com/color/48/windows-10.png" alt="windows-10"/>
         </button>
 			</a>
       <a :href="osxInstallerURL">
 				<button style="border-radius: 25%;" class="main-button no-border">
-          <img width="36" height="36" src="https://img.icons8.com/color/48/000000/mac-os--v1.png" alt="mac-os--v1"/>
+          <img width="48" height="48" src="https://img.icons8.com/color/48/000000/mac-os--v1.png" alt="mac-os--v1"/>
         </button>
 			</a>
       <a :href="linuxInstallerURL">
 				<button style="border-radius: 25%;" class="main-button no-border">
-          <img width="36" height="36" src="https://img.icons8.com/color/48/000000/linux--v1.png" alt="linux--v1"/>
+          <img width="48" height="48" src="https://img.icons8.com/color/48/000000/linux--v1.png" alt="linux--v1"/>
         </button>
 			</a>
     </ul>
@@ -56,9 +54,9 @@ export default {
   <h2 style="font-weight: 700;" class="description-body">OR</h2>
   <div id="main-button-list">
 		<ul>
-      <a :href="sourceInstallerURL">
+      <a href="https://github.com/cosmo-lang/cosmo/archive/refs/heads/master.zip">
 				<button style="border-radius: 25%;" class="main-button no-border">
-          <img width="36" height="36" src="https://img.icons8.com/color/48/000000/git.png" alt="git"/>
+          <img width="48" height="48" src="https://img.icons8.com/color/48/000000/git.png" alt="git"/>
         </button>
 			</a>
     </ul>
