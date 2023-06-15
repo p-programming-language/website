@@ -2,7 +2,7 @@
 @import "./nav.css";
 @import "./home.css";
 @import "./code-highlighting.css";
-/* @import "./community.css"; */
+@import "./community.css";
 
 #app {
   max-width: 1280px;
@@ -12,21 +12,17 @@
   font-weight: normal;
 }
 
-h1#title {
+.title {
   color: #d4d4d4;
+}
+
+.wrapper.title {
+  font-weight: 700;
+  font-size: 350%;
 }
 
 .wrapper {
   text-align: center;
-}
-
-.wrapper > * {
-  display: inline-block;
-}
-
-.wrapper #title {
-  font-weight: 700;
-  font-size: 350%;
 }
 
 @media (min-width: 1024px) {

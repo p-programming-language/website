@@ -1,15 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
+<!-- TODO: latest release header -->
+
 <script setup lang="ts">
-import HTTPServerExample from "../components/HTTPServerExample.vue"
+import HTTPServerExample from "@/components/HTTPServerExample.vue"
 </script>
 
 <template>
-	<h1 id="title">Cosmo</h1>
-	<br/>
+	<h1 class="title">Cosmo</h1>
 	<h3>A statically-typed interpreted programming language written in pure Crystal.</h3>
-	<br/>
 	<h3>It aims to be extensible, readable, and easy to use.</h3>
-	<br/>
 
 	<div id="main-button-list">
 		<ul>

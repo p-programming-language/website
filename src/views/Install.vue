@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <h1 id="title">Install</h1>
+  <h1 class="title">Install</h1>
   <br/>
-  <h2>Welcome!</h2>
+  <h2>Under Construction</h2>
 </template>
