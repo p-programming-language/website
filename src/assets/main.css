@@ -12,6 +12,10 @@
   font-weight: normal;
 }
 
+.no-border {
+  border: 0px;
+}
+
 .bright {
   color: #d4d4d4;
 }
