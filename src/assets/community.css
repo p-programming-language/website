@@ -40,5 +40,5 @@ a.nice-hl:hover {
 
 .separator {
   color: rgb(72, 73, 78);
-  width: calc(var(--block-width) * 2);
+  width: calc(var(--block-width) / 1.21);
 }
