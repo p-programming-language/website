@@ -10,6 +10,23 @@ import ListBlock from '@/components/ListBlock.vue';
     <p style="text-indent: 20px;">
       If you want to learn how you can create things for Cosmo, we have a section of documentation <a class="nice-hl" href="https://github.com/cosmo-lang/cosmo/wiki/Contributing">here</a> describing how, though it is minimal. In the future all documentation you might ever need will be at the Docs page of this site. If you have any questions extending the scope of what's documented, please feel free to ask! You can find Cosmo's repository on the <router-link class="nice-hl" to="/">Home</router-link> page.
     </p>
+    <p>
+      Remember that Cosmo isn't just the language! You can also help by contributing to:
+      <ul>
+        <li>
+          <a class="nice-hl" href="https://github.com/cosmo-lang/stars">Stars</a> + <a class="nice-hl" href="https://github.com/cosmo-lang/stars-api">it's API</a>
+        </li>
+        <li>
+          <a class="nice-hl" href="https://github.com/cosmo-lang/cosmo-installer">The installer</a>
+        </li>
+        <li>
+          <a class="nice-hl" href="https://github.com/cosmo-lang/vscode-cosmo">The VSC extension</a>
+        </li>
+        <li>
+          And <a class="nice-hl" href="https://github.com/cosmo-lang/website">the website</a>.
+        </li>
+      </ul>
+    </p>
   </ListBlock>
   <ListBlock title="Updates, questions, discussions, and more">
     <p style="text-indent: 20px;">
