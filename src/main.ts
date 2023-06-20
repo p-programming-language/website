@@ -5,7 +5,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
 import Community from "./views/Community.vue";
 import Home from "./views/Home.vue";
-import Docs from "./views/Docs.vue";
 import Install from "./views/Install.vue";
 
 const router = createRouter({
@@ -24,7 +23,8 @@ const router = createRouter({
     {
       path: "/docs",
       name: "Docs",
-      component: Docs
+      component: Home,
+      beforeEnter: () => window.location.href = "https://docs.cosmo-lang.dev"
     },
     {
       path: "/install",
