@@ -16,17 +16,17 @@ export default {
   },
   methods: {
     async fetchLatestRelease(): Promise<void> {
-      fetch("https://api.github.com/repos/cosmo-lang/cosmo/releases/latest")
+      fetch("https://api.github.com/repos/p-programming-language/plang/releases/latest")
         .then(response => response.json())
-        .then(data => this.latestRelease = data.tag_name);
+        .then(data => this.latestRelease = data.tag_name ?? data.message);
     }
   }
 };
 </script>
 
 <template>
-	<h1 class="bright title">Cosmo</h1>
-	<h3>A statically-typed interpreted programming language written in pure Crystal.</h3>
+	<h1 class="bright title">PLang</h1>
+	<h3>A statically-typed, interpreted programming language written in 100% TypeScript.</h3>
 	<h3>It aims to be extensible, readable, and easy to use.</h3>
 
 	<div id="main-button-list">
@@ -37,7 +37,7 @@ export default {
 			<a href="https://discord.gg/WHyHh39dwh" target="_blank">
 				<button class="main-button">Try It</button>
 			</a>
-			<a href="https://github.com/cosmo-lang" target="_blank">
+			<a href="https://github.com/p-programming-language" target="_blank">
 				<button class="main-button">GitHub</button>
 			</a>
 		</ul>

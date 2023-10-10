@@ -1,7 +1,7 @@
 @import "./base.css";
 @import "./nav.css";
 @import "./home.css";
-@import "./code-highlighting.css";
+@import "./syntax-highlighting.css";
 @import "./community.css";
 
 #app {
