@@ -21,15 +21,21 @@ const router = createRouter({
       component: Community
     },
     {
-      path: "/docs",
-      name: "Docs",
-      component: Home,
-      beforeEnter: () => window.location.href = "https://docs.cosmo-lang.dev"
-    },
-    {
       path: "/install",
       name: "Install",
       component: Install
+    },
+    {
+      path: "/docs",
+      name: "Docs",
+      component: Home,
+      beforeEnter: () => window.location.href = "https://docs.p-lang.xyz"
+    },
+    {
+      path: "/api",
+      name: "API",
+      component: Home,
+      beforeEnter: () => window.location.href = "https://api.p-lang.xyz"
     }
   ]
 });

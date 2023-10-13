@@ -11,14 +11,14 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
-const pages = ["Home", "Community", "Docs"];
+const pages = ["Home", "Community", "Docs", "API"];
 const selectedPage = ref("Home");
 
-function selectPage(page: string) {
+function selectPage(page: string): void {
   selectedPage.value = page;
 }
 
-function getPageURL(page: string) {
+function getPageURL(page: string): string {
   if (page === "Home")
     return "/";
 
